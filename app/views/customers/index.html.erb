@@ -1,0 +1,25 @@
+<div>
+<p id="notice"><%= notice %></p>
+
+<h1>Obatek Telecom Customer Care Center.</h1>
+<p>
+ Come and explore Obatek Telecom Customer Experience Center.To enjoy our amazing customer services kindly click the link below to register.
+</p>
+<p>
+<%= link_to 'New Customer', new_customer_path %>
+</p>
+<span> Total Customers on board: <strong> <%= @customers.count%> </strong> </span> 
+ <div>Date & Time [UTC]: <%= Time.now %></div>
+    
+<% @customers.each do |customer| %>
+      <!--
+        <%= link_to 'Edit', edit_customer_path(customer) %>
+        <%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %>
+        -->
+        
+    <% end %>
+    
+  </div>
+
+
+

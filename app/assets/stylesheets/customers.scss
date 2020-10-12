@@ -1,6 +1,7 @@
 // Place all the styles related to the Customers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
 .container {
     background-color: #800080;
     color: #fff;
@@ -10,16 +11,17 @@
   }
 
   .wrapper {
+    background-color: #12f0a6;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
   
 .time {
+    align-items: center;
+    background-color: #12f0a6;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
   }
 
   .inner-cont2 {
@@ -58,8 +60,9 @@
     border: 2px solid #0000ff;
     font-size: 30px;
     height: 25px;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px;
+    margin-bottom: 20px;
   }
 
   .para-oba {
@@ -86,15 +89,16 @@ a.reg1 {
 }
 
 .intro {
-  color: #663399;
+  color: #fffaf0;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .cus_index {
+  align-items: center;
+  background-color: #f0ffff;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
   
 .count {
@@ -110,4 +114,38 @@ a.reg1 {
     height: 18px;
     margin-top: 10px;
     padding: 10px;
+  }
+
+  .reg-center {
+    align-items: center;
+    background-color: #f5dfb6;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wide {
+    border-radius: 10px;
+    font-size: 20px;
+    height: 30px;
+    width: 400px;
+  }
+
+  .fclass {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+.sub{
+    background-color: green;
+    border-radius: 8px;
+    color: #ecec1b;
+    font-size: 15px;
+    height: 40px;
+    margin-bottom: 20px;
+    width: 136px;
+  }
+
+  label {
+    font-size: 22px;
   }

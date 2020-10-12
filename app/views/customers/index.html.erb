@@ -6,13 +6,7 @@
 <p class='intro'>
  Come and explore Obatek Telecom Customer Experience Center.
  </p>
- <p class='intro'>
- To enjoy our amazing customer services kindly click the link below to register.
- </p>
-<button class='reg'>
-<%= link_to 'REGISTER', new_customer_path, class: 'reg1'%>
-</button>
-<% @customers.each do |customer| %>
+ <% @customers.each do |customer| %>
       <!--
         <%= link_to 'Edit', edit_customer_path(customer) %>
         <%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %>
@@ -57,6 +51,12 @@
 </div>
 </div>
 <div class='time'>
+<p class='intro'>
+ To enjoy our amazing customer services kindly click the link below to register.
+ </p>
+<button class='reg'>
+<%= link_to 'REGISTER', new_customer_path, class: 'reg1'%>
+</button>
 <span class='span-time'>Date & Time [UTC]: <%= Time.now %></span>
 <span class='span_num'> Total Customers on board: <strong class='count'> <%= @customers.count%> </strong> </span> 
 </div>

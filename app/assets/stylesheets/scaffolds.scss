@@ -36,7 +36,11 @@ div.actions {
   margin-bottom: 10px; }
 
 #notice {
-  color: green; }
+  background-color: antiquewhite;
+  color: green;
+  font-size: 1.5rem;
+  height: 20px;
+}
 
 .field_with_errors {
   padding: 2px;

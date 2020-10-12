@@ -1,3 +1,113 @@
 // Place all the styles related to the Customers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.container {
+    background-color: #800080;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    width: 1000px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .inner-cont2 {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
+    row-gap: 20px;
+    column-gap: 10px;
+    width: 470px;
+    height: 410px;
+    margin-top: 20px;
+  }
+
+  .inner-cont1 {
+    width: 470px;
+    margin-right: 10px;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  .para_word {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align:justify/left/right/center;
+    text-justify:values;
+  }
+
+  .para {
+      width: 100px;
+      height: 100px;
+    }
+
+  .span_num {
+    background-color: #ff4500;
+    border-top-width: 5px;
+    border: 2px solid #0000ff;
+    font-size: 30px;
+    height: 25px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .para-oba {
+    width: 200px;
+    height: 200px;
+  }
+
+  h1 {
+    color: #0000ff;
+    font-size: 30px;
+  }
+
+  .reg {
+    border-radius: 20px;
+    height: 60px;
+    margin-bottom: 15px;
+    width: 200px;
+  }
+
+a.reg1 {
+  color: #663399;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.intro {
+  color: #663399;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 22px;
+}
+
+.cus_index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+.count {
+   font-size: 40px;
+   color: #1818f5;
+ }
+
+  .span-time {
+    background-color: #008000;
+    border: 2px solid #f31212;
+    color: #d8dee4;
+    font-size: 25px;
+    height: 18px;
+    margin-top: 10px;
+    padding: 10px;
+  }

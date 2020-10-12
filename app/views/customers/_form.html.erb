@@ -19,5 +19,9 @@
 <%= f.password_field :password,:class => 'wide', placeholder: 'Enter your password!' %>
 </div>
 <br>
+<%= f.label 'Profile Photo' %>
+<%= f.file_field :avatar%>
+<br>
+<br>
 <%= f.submit:class => 'sub' %>
 <% end %> 

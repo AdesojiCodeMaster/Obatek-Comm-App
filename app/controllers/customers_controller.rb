@@ -20,7 +20,8 @@ class CustomersController < ApplicationController
   # GET /customers/1/edit
   def edit
   end
-
+  
+  
   # POST /customers
   # POST /customers.json
   def create
@@ -28,7 +29,7 @@ class CustomersController < ApplicationController
 
     respond_to do |format|
       if @customer.save
-        format.html { redirect_to @customer, notice: 'Customer was successfully created.' }
+        format.html { redirect_to @customer, notice: "#{@customer.name} was successfully created." }
         format.json { render :show, status: :created, location: @customer }
       else
         format.html { render :new }
@@ -42,7 +43,7 @@ class CustomersController < ApplicationController
   def update
     respond_to do |format|
       if @customer.update(customer_params)
-        format.html { redirect_to @customer, notice: 'Customer was successfully updated.' }
+        format.html { redirect_to @customer, notice: "#{@customer.name} was successfully updated." }
         format.json { render :show, status: :ok, location: @customer }
       else
         format.html { render :edit }
@@ -56,7 +57,7 @@ class CustomersController < ApplicationController
   def destroy
     @customer.destroy
     respond_to do |format|
-      format.html { redirect_to customers_url, notice: 'Customer was successfully destroyed.' }
+      format.html { redirect_to customers_url, notice: "#{@customer.name} was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -69,6 +70,6 @@ class CustomersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def customer_params
-      params.require(:customer).permit(:name, :email, :password)
+      params.require(:customer).permit(:name, :email, :password, :avatar)
     end
 end

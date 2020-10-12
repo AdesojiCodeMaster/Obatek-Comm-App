@@ -1,5 +1,9 @@
 <div>
 <p id="notice"><%= notice %></p>
+<% if @customer.avatar.attached? %>
+<%= image_tag @customer.avatar, style: 'width: 30px; height: 40px; display: block'%>
+<% end %>
+
 <h3>
 THE GREETINGS FROM OBATEK TELECOM!!!
 </h3>

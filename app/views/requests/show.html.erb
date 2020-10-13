@@ -1,5 +1,8 @@
 <div class = 'reg-cen' >
+
 <p id="notice"><%= notice %></p>
+
+<h1 class='das-b'>Obatek Telecom Show DashBoard For Individual Request. </h1>
 
 <div>
 <label for="request_customer_id"><strong>Request Topic</strong></label>
@@ -46,7 +49,6 @@
 <% if @request.avatar.attached? %>
 <%= image_tag @request.avatar, style: 'width: 50px; height: 60px; display: block'%>
 <% end %>
-
 <button class='btn-nav2' ><%= link_to 'Navigate To Requests Summary', requests_path %></button>
 <!--
 <p>
@@ -54,3 +56,4 @@
 </p>
 -->
 </div>
+

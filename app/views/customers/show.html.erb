@@ -30,6 +30,10 @@ customer resolution platform.
 <!--
 <%= link_to 'Edit', edit_customer_path(@customer) %> |
 -->
+<p class='show-p'>
+<b class='cus-name'><%= @customer.id %></b> is your <strong>customer_id</strong> kindly use it to make your <strong> requests </strong> with us.
+Thank you!
+</p>
 <div class='show-link'>
 <button class='btn-navi' ><%= link_to 'Navigate To HomePage', customers_path %> </button>
 <button class='btn-navi' ><%= link_to 'Navigate To RequestPage', new_request_path %> </button>

@@ -1,3 +1,93 @@
 // Place all the styles related to the Requests controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+th, td {
+  border: 1px solid black;
+}
+
+table {
+  width: 60%;
+}
+  
+th {
+  background-color: #4CAF50;
+  color: #fff;
+  height: 30px;
+  font-size: 1.1rem;
+}
+
+.table-cont {
+  align-items: center;
+  background-color: #f0f8ff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+  
+.sho-btn {
+  background-color: lightblue;
+  font-size: 1.2rem;
+  height: 36px;
+  margin: 7px 0 0 15px;
+  width: 96px;
+}
+
+.dest-btn {
+  background-color: #e04c27;
+  font-size: 1.2rem;
+  height: 36px;
+  margin: 7px 0 0 10px;
+  width: 96px;
+}
+
+.form_elem {
+    display: flex;
+    flex-direction: column;
+}
+
+.id-btn {
+    margin-left: 35px;
+}
+
+.reg-cen {
+  align-items: center;
+  background-color: #f5f5dc;
+  display: flex;
+  flex-direction: column;
+}
+
+.req-msg {
+  width: 465px; 
+  height: 220px;
+  border: 2px solid black;
+  margin: 10px 0 10px 0;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-nav2 {
+  margin: 10px 0 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  height: 36px;
+  width: 350px;
+}
+    
+   
+.sub1 {
+  background-color: green;
+  border-radius: 8px;
+  color: #ecec1b;
+  font-size: 15px;
+  height: 40px;
+  margin-bottom: 0;
+  width: 136px
+}
+
+.index-img {
+  margin: 10px 0 0 15px;
+}

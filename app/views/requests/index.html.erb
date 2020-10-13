@@ -1,13 +1,18 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Requests</h1>
+
+
+
+
+<p id="notice"><%= notice %></p>
+<div class='table-cont'>
+<h1>Requests Summary</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th>Customer</th>
+      <th>Request Title</th>
+      <th>Customer_id</th>
+      <th>Customer_Pix</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,16 +21,40 @@
     <% @requests.each do |request| %>
       <tr>
         <td><%= request.title %></td>
-        <td><%= request.body %></td>
-        <td><%= request.customer_id %></td>
-        <td><%= link_to 'Show', request %></td>
-        <td><%= link_to 'Edit', edit_request_path(request) %></td>
-        <td><%= link_to 'Destroy', request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button class='id-btn'><%= request.customer_id %></button></td>
+        <td>
+      
+        <% if request.avatar.attached? %>
+        <div class= 'index-img'>
+       <%= image_tag request.avatar, style: 'width: 100px; height: 60px; display: block'%>
+       </div>
+      <% end %>
+       
+        </td>
+        <td><button class='sho-btn'><%= link_to 'Show', request %></button></td>
+        <td><button class='dest-btn'><%= link_to 'Destroy', request, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
+<div>
+<button class='btn-navi'><%= link_to 'Make Your New Request', new_request_path %></button>
+</div>
+<!--
+<p>
+<td><%= link_to 'Edit', edit_request_path(request) %></td>
+<td><%= request.body %></td>
+<th>Body</th>
+</p>
+-->
 
-<%= link_to 'New Request', new_request_path %>
+</div>
+
+
+
+
+
+
+

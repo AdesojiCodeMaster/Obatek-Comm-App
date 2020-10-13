@@ -1,6 +1,6 @@
 <%= form_with(model: request, local: true) do |form| %>
   <% if request.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" >
       <h2><%= pluralize(request.errors.count, "error") %> prohibited this request from being saved:</h2>
 
       <ul>
@@ -12,21 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+  <label for="request_title">Request Topic</label>
+  <input class="wide" type="text" name="request[title]" id="request_title">
   </div>
 
   <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body %>
+  <label for="request_body">Request Body</label>
+  <textarea class="req-msg" name="request[body]" id="request_body"></textarea>
   </div>
 
   <div class="field">
-    <%= form.label :customer_id %>
-    <%= form.text_field :customer_id %>
+  <label for="request_customer_id">Customer_Id</label>
+  <input class="wide" type="text" name="request[customer_id]" id="request_customer_id">
   </div>
-
+  <label for="customer_Profile Photo" class='profile'>Profile photo</label>
+  <%= form.file_field :avatar%>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit:class => 'sub1' %>
   </div>
 <% end %>

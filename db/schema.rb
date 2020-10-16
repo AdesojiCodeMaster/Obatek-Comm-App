@@ -43,14 +43,6 @@ ActiveRecord::Schema.define(version: 2020_10_11_212900) do
     t.index ["request_id"], name: "index_comments_on_request_id"
   end
 
-  create_table "customers", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.string "password"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "requests", force: :cascade do |t|
     t.string "title"
     t.text "body"

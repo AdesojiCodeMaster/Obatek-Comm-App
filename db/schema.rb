@@ -42,7 +42,12 @@ ActiveRecord::Schema.define(version: 2020_10_11_212900) do
     t.index ["customer_id"], name: "index_comments_on_customer_id"
     t.index ["request_id"], name: "index_comments_on_request_id"
   end
+<<<<<<< HEAD
 create_table "requests", force: :cascade do |t|
+=======
+
+  create_table "requests", force: :cascade do |t|
+>>>>>>> bc606132f0bae1529e5f199747898d00b7cef529
     t.string "title"
     t.text "body"
     t.integer "customer_id", null: false

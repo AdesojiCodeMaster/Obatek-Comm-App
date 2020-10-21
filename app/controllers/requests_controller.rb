@@ -1,5 +1,5 @@
 class RequestsController < ApplicationController
-  before_action :set_request, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_member!, only: [:show, :edit, :update, :destroy]
 
   # GET /requests
   # GET /requests.json
@@ -10,6 +10,7 @@ class RequestsController < ApplicationController
   # GET /requests/1
   # GET /requests/1.json
   def show
+    @request = Request.find(params[:id])
   end
 
   # GET /requests/new
@@ -24,7 +25,7 @@ class RequestsController < ApplicationController
   # POST /requests
   # POST /requests.json
   def create
-    @request = Request.new(request_params)
+    @request = current_member.requests.build(request_params)
 
     respond_to do |format|
       if @request.save

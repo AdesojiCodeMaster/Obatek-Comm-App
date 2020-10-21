@@ -6,10 +6,20 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    </head>
 
   <body>
+
+ <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
     <%= yield %>
+    <% if customer_signed_in? %>  
+      <%= link_to " Logout", destroy_customer_session_path, :method => :delete, class: "destroy_member_session" %>
+    <%else%>
+      <%= link_to "Sign up", new_customer_registration_path,  class: "new__customer_registration" %>
+      <%= link_to "Login", new_customer_session_path,  class: "new_customer_session" %>
+  <% end %>  
   </body>
 </html>

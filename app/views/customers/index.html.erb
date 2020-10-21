@@ -1,3 +1,4 @@
+
 <div class= 'cus_index'>
 <p id="notice"><%= notice %></p>
 <h1>Obatek Telecom Customer Care Center.</h1>
@@ -7,10 +8,7 @@
  Come and explore Obatek Telecom Customer Experience Center.
  </p>
  <% @customers.each do |customer| %>
-      <!--
-        <%= link_to 'Edit', edit_customer_path(customer) %>
-        <%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %>
-        -->
+      
     <% end %>
     </div>
 </div>
@@ -56,8 +54,13 @@ Kindly click the link below to <strong>register</strong>
 and enjoy our amazing customer services.
  </p>
 <button class='reg'>
-<%= link_to 'REGISTER', new_customer_path, class: 'reg1'%>
+<%= link_to 'REGISTER',  new_customer_registration_path, class: 'reg1'%>
 </button>
+<%= link_to 'welcomepage',  edit_customer_registration_path, class: 'reg1'%>
 <span class='span-time'>Date & Time [UTC]: <%= Time.now %></span>
 <span class='span_num'> Total Customers on board: <strong class='count'> <%= @customers.count%> </strong> </span> 
 </div>
+
+
+
+<%= link_to 'Request Page', requests_path %>

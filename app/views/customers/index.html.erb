@@ -7,10 +7,10 @@
 <p class='intro'>
  Come and explore Obatek Telecom Customer Experience Center.
  </p>
- <% @customers.each do |customer| %>
-      
-    <% end %>
-    </div>
+ <%if current_customer %>
+<div>Please, Customer_Id Is:<button class='reg1'><%= current_customer.id  %></button></div>
+<%end%>
+</div>
 </div>
 
 <div class='wrapper'>
@@ -50,17 +50,21 @@
 </div>
 <div class='time'>
 <p class='intro'>
-Kindly click the link below to <strong>register</strong> 
+Kindly click the appropriate button below to <strong>register or login</strong> 
 and enjoy our amazing customer services.
  </p>
-<button class='reg'>
-<%= link_to 'REGISTER',  new_customer_registration_path, class: 'reg1'%>
+ <div class='reg-click'>
+<button>
+<%= link_to 'Sign_Up',  new_customer_registration_path %>
 </button>
-<%= link_to 'welcomepage',  edit_customer_registration_path, class: 'reg1'%>
+<button><%= link_to 'Log_In',  new_customer_session_path %></button>
+</div>
+<%if current_customer %>
+<button class='reg2'><%= link_to 'Click Here To Move To Request Page', requests_path %></button>
+<%end%>
 <span class='span-time'>Date & Time [UTC]: <%= Time.now %></span>
 <span class='span_num'> Total Customers on board: <strong class='count'> <%= @customers.count%> </strong> </span> 
 </div>
 
 
 
-<%= link_to 'Request Page', requests_path %>

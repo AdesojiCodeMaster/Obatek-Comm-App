@@ -1,5 +1,5 @@
 class RequestsController < ApplicationController
-  before_action :authenticate_member!, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_customer!, only: [:show, :edit, :update, :destroy]
 
   # GET /requests
   # GET /requests.json
@@ -25,8 +25,8 @@ class RequestsController < ApplicationController
   # POST /requests
   # POST /requests.json
   def create
-    @request = current_member.requests.build(request_params)
-
+    #@request = current_customer.requests.build(request_params)
+    @request = Request.new(request_params)
     respond_to do |format|
       if @request.save
         format.html { redirect_to @request, notice: 'Request was successfully created.' }
@@ -55,6 +55,7 @@ class RequestsController < ApplicationController
   # DELETE /requests/1
   # DELETE /requests/1.json
   def destroy
+    @request = Request.find(params[:id])
     @request.destroy
     respond_to do |format|
       format.html { redirect_to requests_url, notice: 'Request was successfully destroyed.' }

@@ -58,7 +58,7 @@ th {
 
 .req-msg {
   width: 465px; 
-  height: 220px;
+  height: 120px;
   border: 2px solid black;
   margin: 10px 0 10px 0;
 }
@@ -101,4 +101,8 @@ th {
   color: #f31313;
   font-size: 1.6rem;
   margin: 40px 0 0 0;
+}
+
+.request_body {
+  display: block;
 }

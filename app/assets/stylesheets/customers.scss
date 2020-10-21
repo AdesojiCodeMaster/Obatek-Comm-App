@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+#body { 
+  background-color: #800080;
+}
+
 .container {
     background-color: #800080;
     color: #fff;
@@ -53,18 +57,7 @@
       width: 100px;
       height: 100px;
     }
-
-  .span_num {
-    background-color: #ff4500;
-    border-top-width: 5px;
-    border: 2px solid #0000ff;
-    font-size: 30px;
-    height: 25px;
-    margin-top: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-
+    
   .para-oba {
     width: 200px;
     height: 200px;
@@ -82,16 +75,18 @@
     width: 200px;
   }
 
-a.reg1 {
+ a.reg1 {
   color: #663399;
   font-size: 20px;
   text-decoration: none;
 }
 
 .intro {
-  color: #fffaf0;
+  background-color: #f0ffff;
+  color: blue;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 16px;
+  margin-top: 16px;
 }
 
 .cus_index {
@@ -105,18 +100,8 @@ a.reg1 {
    font-size: 40px;
    color: #1818f5;
  }
-
-  .span-time {
-    background-color: #008000;
-    border: 2px solid #f31212;
-    color: #d8dee4;
-    font-size: 25px;
-    height: 18px;
-    margin-top: 10px;
-    padding: 10px;
-  }
-
-  .reg-center {
+ 
+ .reg-center {
     align-items: center;
     background-color: #f5dfb6;
     display: flex;
@@ -137,7 +122,7 @@ a.reg1 {
     justify-content: center;
   }
 
-.sub {
+ .sub {
     background-color: green;
     border-radius: 8px;
     color: #ecec1b;
@@ -186,7 +171,7 @@ a.reg1 {
 }
   
 .signup {
-  background-color: #12f0a6;
+  background-color: #f0ffff;
 }
 
 .container {
@@ -194,6 +179,7 @@ a.reg1 {
   color: #fff;
   display: grid;
   grid-template-columns: repeat(2, auto);
+  margin-bottom: 15px;
   width: 1000px;
 }
 
@@ -240,19 +226,8 @@ a.reg1 {
     width: 100px;
     height: 100px;
   }
-
-.span_num {
-  background-color: #ff4500;
-  border-top-width: 5px;
-  border: 2px solid #0000ff;
-  font-size: 30px;
-  height: 25px;
-  margin-top: 10px;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-.para-oba {
+  
+  .para-oba {
   width: 200px;
   height: 200px;
 }
@@ -275,12 +250,6 @@ font-size: 20px;
 text-decoration: none;
 }
 
-.intro {
-color: #fffaf0;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size: 16px;
-}
-
 .cus_index {
 align-items: center;
 background-color: #f0ffff;
@@ -291,16 +260,6 @@ flex-direction: column;
 .count {
  font-size: 40px;
  color: #1818f5;
-}
-
-.span-time {
-  background-color: #008000;
-  border: 2px solid #f31212;
-  color: #d8dee4;
-  font-size: 25px;
-  height: 18px;
-  margin-top: 10px;
-  padding: 10px;
 }
 
 .reg-center {
@@ -368,6 +327,30 @@ a {
 .cus-name {
   color: #0000ff;
 }
+
 .profile {
 margin-bottom: 10px;
+}
+
+.span_num {
+  font-size: 2.5rem;
+  width: 510px;
+  margin-left: 0px;
+  padding-left: 0px;
+  border: 1px solid #f31212;
+  background-color: #ffebcd;
+  margin-bottom: 10px;
+}
+
+.span-time {
+  background-color: #ffe4c4;
+  color: #ff0000;
+  font-size: rem;
+  margin: 10px 0 10px 0;
+  padding: 3px;
+  width: 350px;
+}
+
+.reg2 {
+  margin-top: 10px;
 }

@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+}
+
+.reg-signup {
+  margin-right: 80px;
+}
+
+.front-log {
+  width: 120px;
+  height: 40px;
+}
+
+.signup-input{
+  border-radius: 8px;
+  width: 404px;
+  height: 36px;
+}
+
+.notice {
+    color: #fff;
+}

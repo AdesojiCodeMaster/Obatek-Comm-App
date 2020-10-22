@@ -1,3 +1,4 @@
+<%if current_customer%>
 <p id="notice"><%= notice %></p>
 <div  class='reg-cen'>
 <h1 class='oba-comm-das'> Obatek Telecom Customer Comments/Complains DashBoard </h1>
@@ -29,5 +30,10 @@
   </div>
 <% end %>
 <% end %>
-<button class='btn-navi'><%= link_to 'New Request ', new_comment_path %></button>
+<div class='navig-btn'>
+<button class='btn-navi'><%= link_to '<<HomePage', root_path %></button>
+<button class='btn-navi'><%= link_to 'Move To Request Summary ', requests_path %></button>
+<button class='btn-navi'><%= link_to 'New Comment ', new_comment_path %></button>
 </div>
+</div>
+<% end %>

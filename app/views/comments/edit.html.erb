@@ -1,6 +1,11 @@
-<h1>Editing Comment</h1>
+<% if current_customer %>
+<div class='reg-cen'>
+<h1 class='oba-comm-das'> Comment/Complain Editing DashBoard</h1>
 
 <%= render 'form', comment: @comment %>
-
-<%= link_to 'Show', @comment %> |
-<%= link_to 'Back', comments_path %>
+<div class='navig-btn'>
+<button class='btn-nav'><%= link_to 'To Comment Summary', @comment %></button>
+<button class='btn-nav'><%= link_to 'To comment DashBoard', comments_path %></button>
+</div>
+</div>
+<% end %>

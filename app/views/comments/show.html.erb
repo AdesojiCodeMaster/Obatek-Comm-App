@@ -1,19 +1,30 @@
+<% if current_customer %>
+<div  class='reg-cen'>
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Body:</strong>
-  <%= @comment.body %>
+<h1 class='oba-comm-das'> Show Individual Customer Comment/Complain Summary</h1>
+<p class='comm-sh-pa'>
+  <strong>Comment/Complain Body</strong>
+  <br>
+  <br>
+  <label class='show-panel'><%= @comment.body %></label>
+  
 </p>
-
-<p>
+<div class='comm-spec'>
+<p class='comm-sh-pa'>
   <strong>Customer:</strong>
   <%= @comment.customer_id %>
 </p>
 
-<p>
+<p class='comm-sh-pa'>
   <strong>Request:</strong>
   <%= @comment.request_id %>
 </p>
+</div>
+<div class='comm-path'>
+<button class='btn-navi'><%= link_to '<<HomePage', root_path %></button>
+<button class='btn-navi'><%= link_to 'To Comment DashBoard', comments_path %></button>
+<button class='btn-navi'><%= link_to 'Edit Your Comment', edit_comment_path(@comment) %> </button>
+</div>
+</div>
 
-<%= link_to 'Edit', edit_comment_path(@comment) %> |
-<%= link_to 'Back', comments_path %>
+<% end %>

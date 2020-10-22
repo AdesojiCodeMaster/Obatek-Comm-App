@@ -1,6 +1,11 @@
+<% if current_customer %>
 <div class='reg-cen' >
 <h1>Obatek Telecom New Request Form</h1>
 
 <%= render 'form', request: @request %>
+<div class='navig-btn'>
+<button class='btn-navi'><%= link_to '<<HomePage', root_path %></button>
 <button class='btn-navi'><%= link_to 'Navigate To Summary Page', requests_path %></button>
 </div>
+</div>
+<% end %>

@@ -1,7 +1,8 @@
+<% if current_customer %>
 <div class='reg-cen'>
 <h1>Make Your Comment/Complain Here</h1>
 <p class='comment-info'> Please, Remember To Use Your<strong> Customer_Id</strong> And <strong>Request_Id</strong> To Send Your Comments/Complains Us!!!</p>
 <%= render 'form', comment: @comment %>
-
 <button class= 'comm-path'><%= link_to 'Navigate to Comments/Complains DashBoard', comments_path %></button>
 </div>
+<% end %>

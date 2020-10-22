@@ -42,8 +42,7 @@ ActiveRecord::Schema.define(version: 2020_10_16_093850) do
     t.index ["customer_id"], name: "index_comments_on_customer_id"
     t.index ["request_id"], name: "index_comments_on_request_id"
   end
-
-  create_table "customers", force: :cascade do |t|
+ create_table "customers", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -56,7 +55,7 @@ ActiveRecord::Schema.define(version: 2020_10_16_093850) do
     t.index ["reset_password_token"], name: "index_customers_on_reset_password_token", unique: true
   end
 
-  create_table "requests", force: :cascade do |t|
+create_table "requests", force: :cascade do |t|
     t.string "title"
     t.text "body"
     t.integer "customer_id", null: false

@@ -1,3 +1,42 @@
 // Place all the styles related to the Comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.oba-comm-das {
+  font-size: 2rem;
+}
+
+.comm-spec {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-input {
+  margin-right: 10px;
+  width: 120px;
+}
+
+.comm-idx-btn1 {
+  width: 80px;
+  background-color: #8bc98b;
+}
+
+.comm-idx-btn2 {
+  width: 80px;
+  background-color: #eeee14;
+}
+
+.comm-idx-btn3 {
+  width: 80px;
+  background-color: #ff0000;
+}
+
+.comment-info {
+  background-color: #f0f8ff;
+  color: #ff0000;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.comm-path {
+  margin-bottom: 10px;
+}

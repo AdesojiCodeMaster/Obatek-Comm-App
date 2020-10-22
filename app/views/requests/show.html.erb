@@ -5,17 +5,17 @@
 <h1 class='das-b'>Obatek Telecom Show DashBoard For Individual Request. </h1>
 
 <div>
-<label for="request_customer_id"><strong>Request Topic</strong></label>
+<label for="request_customer_id" class='show-dash'><strong>Request Topic</strong></label>
   <input class="wide" type="text" value='<%= @request.title %>'>
 </div>
 
 <div>
-<label for="request_customer_id"><strong>Request Body</strong></label>
+<label for="request_customer_id" class='show-dash'><strong>Request Body</strong></label>
 <article class="req-msg"><%= @request.body %> </article>
 </div>
 
 <div>
-  <label for="request_customer_id"><strong>Customer_id</strong></label>
+  <label for="request_customer_id" class='show-dash'><strong>Customer_id</strong></label>
   <input class="wide" type="text" value='<%= @request.customer_id %>'>
 </div>
   

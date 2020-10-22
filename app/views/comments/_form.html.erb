@@ -12,20 +12,20 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body %>
+    <%= form.label :comment_or_complain_body,  class:'request_body' %>
+    <textarea id="message" name="message" cols="30" rows="4"></textarea>
+  </div>
+<div class='comm-spec'>
+  <div class="field">
+    <%= form.label :customer_Id,  class:'request_body'%>
+    <%= form.text_field :customer_id, class:'text-input'%>
   </div>
 
   <div class="field">
-    <%= form.label :customer_id %>
-    <%= form.text_field :customer_id %>
+    <%= form.label :request_Id,  class:'request_body' %>
+    <%= form.text_field :request_id, class:'text-input' %>
   </div>
-
-  <div class="field">
-    <%= form.label :request_id %>
-    <%= form.text_field :request_id %>
-  </div>
-
+</div>
   <div class="actions">
     <%= form.submit %>
   </div>

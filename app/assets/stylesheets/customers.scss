@@ -13,19 +13,13 @@
     grid-template-columns: repeat(2, auto);
     width: 1000px;
   }
-
-  .wrapper {
-    background-color: #12f0a6;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
   
-.time {
+  .time {
     align-items: center;
     background-color: #12f0a6;
     display: flex;
     flex-direction: column;
+    width: 1284px;
   }
 
   .inner-cont2 {
@@ -160,7 +154,7 @@
     font-size: 18px;
     font-weight: 500;
     height: 36px;
-    width: 350px;
+    width: 250px;
     margin: 20px 0 10px 0;
   }
   .cus-name {
@@ -184,7 +178,7 @@
 }
 
 .wrapper {
-  background-color: #12f0a6;
+  background-color: #800080;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -255,6 +249,7 @@ align-items: center;
 background-color: #f0ffff;
 display: flex;
 flex-direction: column;
+width: 1284px;
 }
 
 .count {
@@ -317,13 +312,6 @@ a {
   margin: 40px 20px 20px 20px;
 }
 
-.btn-navi {
-  font-size: 18px;
-  font-weight: 500;
-  height: 36px;
-  width: 350px;
-  margin: 20px 0 10px 0;
-}
 .cus-name {
   color: #0000ff;
 }

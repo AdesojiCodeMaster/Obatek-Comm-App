@@ -99,10 +99,16 @@ th {
 .comm-not {
   background-color: aliceblue;
   color: #f31313;
-  font-size: 1.6rem;
-  margin: 40px 0 0 0;
+  font-size: 0.8rem;
+  margin: 40px 0 0 20px;
 }
 
 .request_body {
   display: block;
 }
+
+.show-dash {
+  display: block;
+  margin-bottom: 0;
+}
+

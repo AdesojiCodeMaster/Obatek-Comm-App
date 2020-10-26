@@ -1,4 +1,4 @@
-<% if current_customer %>
+
 <div  class='reg-cen'>
 <p id="notice"><%= notice %></p>
 <h1 class='oba-comm-das'> Show Individual Customer Comment/Complain Summary</h1>
@@ -20,11 +20,9 @@
   <%= @comment.request_id %>
 </p>
 </div>
-<div class='comm-path'>
-<button class='btn-navi'><%= link_to '<<HomePage', root_path %></button>
-<button class='btn-navi'><%= link_to 'To Comment DashBoard', comments_path %></button>
-<button class='btn-navi'><%= link_to 'Edit Your Comment', edit_comment_path(@comment) %> </button>
+<div class='form_elem'>
+<button class='btn-align'><%= link_to 'HomePage', root_path %></button>
+<button class='btn-align'><%= link_to 'To Comment DashBoard', comments_path %></button>
 </div>
 </div>
 
-<% end %>

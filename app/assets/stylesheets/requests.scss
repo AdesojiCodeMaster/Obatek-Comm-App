@@ -41,12 +41,12 @@ th {
 }
 
 .form_elem {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .id-btn {
-    margin-left: 35px;
+  margin: 15px 0 0 35px;
 }
 
 .reg-cen {
@@ -76,8 +76,7 @@ th {
   height: 36px;
   width: 350px;
 }
-    
-   
+
 .sub1 {
   background-color: green;
   border-radius: 8px;
@@ -89,7 +88,7 @@ th {
 }
 
 .index-img {
-  margin: 10px 15px 0 15px;
+  margin: 2px 15px 0 15px;
 }
 
 .das-b {
@@ -112,3 +111,10 @@ th {
   margin-bottom: 0;
 }
 
+.btn-align {
+  margin: 2px 0 2px 0;
+}
+
+.table-form2 {
+  margin-left: 150px;
+}

@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= form.label :comment_or_complain_body,  class:'request_body' %>
-    <textarea id="message" name="message" cols="30" rows="4"></textarea>
+    <textarea name="comment[body]" id="comment_body" cols="30" rows="4"></textarea>
   </div>
 <div class='comm-spec'>
   <div class="field">
@@ -29,5 +29,5 @@
   <div class="actions">
     <%= form.submit %>
   </div>
-  <button class='btn-nav'><%= link_to 'HomePage', root_path %></button>
+  <button class='btn-nav'><%= link_to 'Home Page', root_path %></button>
 <% end %>

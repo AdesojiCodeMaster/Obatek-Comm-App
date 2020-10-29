@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_201_016_093_850) do
+ActiveRecord::Schema.define(version: 20_201_016_093_850) do # rubocop:disable Metrics/BlockLength
   create_table 'active_storage_attachments', force: :cascade do |t|
     t.string 'name', null: false
     t.string 'record_type', null: false

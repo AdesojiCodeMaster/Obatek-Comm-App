@@ -1,3 +1,4 @@
+# rubocop:disable Layout/LineLength
 require 'test_helper'
 
 class RequestsControllerTest < ActionDispatch::IntegrationTest
@@ -46,3 +47,4 @@ class RequestsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to requests_url
   end
 end
+# rubocop:enable Layout/LineLength

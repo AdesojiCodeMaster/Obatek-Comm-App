@@ -1,24 +1,50 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+BUSINESS COMMUNICATION APPLICATION.
 
-Things you may want to cover:
+## Capstone Project Title: Obatek-Comm-App
 
-* Ruby version
+This project was created using Ruby, Ruby on Rails, HTML5, CSS3 and BOOTSTRAP.This is a customer relation app to service customers' requests and resolve their complains.
 
-* System dependencies
 
-* Configuration
+![Homepage-screenshot](./app/assets/images/Obatek.screenshot.png)
 
-* Database creation
+## Built With
+- Ruby,
+- Ruby on Raiils
+- HTML5,
+- CSS3,
+- rubocop,
+- linters,
+- Bootstrap.
 
-* Database initialization
+## Live Demo
 
-* How to run the test suite
+[Live Demo Link]()
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Author
 
-* ...
+👤 Adesoji Adewumi
+
+- Github: [@AdesojiCodeMaster](https://github.com/AdesojiCodeMaster)
+- Twitter: [@codemas22665735](https://twitter.com/codemas22665735)
+- Linkedin: [linkedin](https://www.linkedin.com/in/adesoji-adewumi)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+- GitHub
+- TheOdinProject
+
+## 📝 License MIT
+
+This project is an open licensed.

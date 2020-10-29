@@ -4,8 +4,7 @@ BUSINESS COMMUNICATION APPLICATION.
 
 ## Capstone Project Title: Obatek-Comm-App
 
-This project was created using Ruby, Ruby on Rails, HTML5, CSS3 and BOOTSTRAP.This is a customer relation app to service customers' requests and resolve their complains.
-
+The project is created using Ruby, Ruby on Rails, HTML5, CSS3, and BOOTSTRAP. This is a customer relations app to service customers' requests and resolve their complaints.
 
 ![Homepage-screenshot](./app/assets/images/Obatek.screenshot.png)
 
@@ -15,7 +14,7 @@ This project was created using Ruby, Ruby on Rails, HTML5, CSS3 and BOOTSTRAP.Th
 - HTML5,
 - CSS3,
 - rubocop,
-- linters,
+- linters
 - Bootstrap.
 
 ## Live Demo

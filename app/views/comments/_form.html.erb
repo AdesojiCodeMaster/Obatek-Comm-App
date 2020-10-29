@@ -18,12 +18,12 @@
 <div class='comm-spec'>
   <div class="field">
     <%= form.label :customer_Id,  class:'request_body'%>
-    <%= form.text_field :customer_id, class:'text-input'%>
+    <%= form.text_field :customer_id, class:'text-input', value: current_customer.id %>
   </div>
 
   <div class="field">
     <%= form.label :request_Id,  class:'request_body' %>
-    <%= form.text_field :request_id, class:'text-input' %>
+    <%= form.text_field :request_id, class:'text-input', placeholder:'Enter request_id' %>
   </div>
 </div>
   <div class="actions">

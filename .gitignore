@@ -30,6 +30,8 @@
 /public/assets
 .byebug_history
 **/node_modules
+node_modules/
+/vendor
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 

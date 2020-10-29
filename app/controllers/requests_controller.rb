@@ -1,5 +1,5 @@
 class RequestsController < ApplicationController
-  before_action :authenticate_customer!, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_customer!, only: %i[show edit update destroy]
 
   # GET /requests
   # GET /requests.json
@@ -19,13 +19,12 @@ class RequestsController < ApplicationController
   end
 
   # GET /requests/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /requests
   # POST /requests.json
   def create
-    #@request = current_customer.requests.build(request_params)
+    # @request = current_customer.requests.build(request_params)
     @request = Request.new(request_params)
     respond_to do |format|
       if @request.save
@@ -64,13 +63,14 @@ class RequestsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_request
-      @request = Request.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def request_params
-      params.require(:request).permit(:title, :body, :customer_id, :avatar)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_request
+    @request = Request.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def request_params
+    params.require(:request).permit(:title, :body, :customer_id, :avatar)
+  end
 end

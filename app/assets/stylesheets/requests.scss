@@ -1,16 +1,17 @@
 // Place all the styles related to the Requests controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-th, td {
+th,
+td {
   border: 1px solid black;
 }
 
 table {
   width: 60%;
 }
-  
+
 th {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: #fff;
   height: 30px;
   font-size: 1.1rem;
@@ -23,7 +24,7 @@ th {
   flex-direction: column;
   flex-wrap: nowrap;
 }
-  
+
 .sho-btn {
   background-color: lightblue;
   font-size: 1.2rem;
@@ -57,7 +58,7 @@ th {
 }
 
 .req-msg {
-  width: 465px; 
+  width: 465px;
   height: 120px;
   border: 2px solid black;
   margin: 10px 0 10px 0;
@@ -84,7 +85,7 @@ th {
   font-size: 15px;
   height: 40px;
   margin-bottom: 0;
-  width: 136px
+  width: 136px;
 }
 
 .index-img {
@@ -102,16 +103,14 @@ th {
   margin: 40px 0 0 20px;
 }
 
-.request_body {
-  display: block;
-  margin-left: 30px;
-}
-
 .show-dash {
   display: block;
   margin-bottom: 0;
 }
 
+.request_body1 {
+  margin-left: 30px;
+}
 
 .btn-align {
   margin: 2px 0 2px 0;
@@ -119,4 +118,9 @@ th {
 
 .table-form2 {
   margin-left: 150px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
 }

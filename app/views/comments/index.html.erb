@@ -5,7 +5,7 @@
 <% @comments.each do |comment| %>
   <%= form_with(model: comment, local: true) do |form| %>
   <div class="field">
-    <%= form.label :Customer_comment,  class:'request_body' %>
+    <%= form.label :Customer_comment,  class:'request_body1' %>
     <textarea id="message" name="message" cols="26" rows="4"><%= comment.body %></textarea>
   </div>
 

@@ -1,5 +1,5 @@
 {
-  "name": "Obatek_Comm_App",
+  "name": "c",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
@@ -13,6 +13,33 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "hint": "^6.0.7",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.17.2",
     "webpack-dev-server": "^3.11.0"
-  }
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdesojiCodeMaster/Obatek-Comm-App.git"
+  },
+  "keywords": [
+    "Comm"
+  ],
+  "author": "Adesoji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdesojiCodeMaster/Obatek-Comm-App/issues"
+  },
+  "homepage": "https://github.com/AdesojiCodeMaster/Obatek-Comm-App#readme"
 }

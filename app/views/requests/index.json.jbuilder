@@ -1,1 +1,1 @@
-json.array! @requests, partial: "requests/request", as: :request
+json.array! @requests, partial: 'requests/request', as: :request

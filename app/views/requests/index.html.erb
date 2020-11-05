@@ -1,0 +1,101 @@
+<% if current_customer %>
+<p id="notice"><%= notice %></p>
+<div class='table-cont'>
+<h1 class='head-ad'>Requests Summary</h1>
+<div class ='tab-div'>
+<table class='table-form'>
+  
+  
+    <% @requests.each do |request| %>
+      
+      <thead>
+      <tr class='idx-row'>
+        <th class='q-row'>Request Title</th>
+        <th class='q-row'>Customer Name</th>
+        <th class='q-row'>Customer_Pix</th>
+        <th class='q-row'> <div class='sho-cen'>Show</div></th>
+        <th class='q-row'> <div class='sho-cen'>Destroy</div></th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <tr class='idx-row' >
+        <td class='q-row'><%= request.title %></td>
+       <td class='q-row'><button class='id-btn'><%= Customer.find(request.customer_id).customer_name %></button></td>
+        <td class='q-row'>
+      
+        <% if request.avatar.attached? %>
+        <div class= 'index-img'>
+       <%= image_tag request.avatar, style: 'width: 70px; height: 50px; display: block'%>
+       </div>
+      <% end %>
+      </td>
+       <td class='q-row'><button class='sho-btn'><%= link_to 'Show', request %></button></td>
+        <td class='q-row'><button class='dest-btn'><%= link_to 'Destroy', request, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+      </tr>
+ <% end %>
+ </tbody>
+</table>
+</div>
+
+
+<div class ='tab-div2'>
+<table class='table-form2'>
+  <thead>
+    <tr>
+      <th>Request Title</th>
+      <th>Customer Name</th>
+      <th>Customer_Pix</th>
+      <th> <div class='sho-cen'>Show</div></th>
+      <th> <div class='sho-cen'>Destroy</div></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @requests.each do |request| %>
+      <tr>
+        <td><%= request.title %></td>
+        <td><button class='id-btn'><%= Customer.find(request.customer_id).customer_name  %></button></td>
+        <td>
+      
+        <% if request.avatar.attached? %>
+        <div class= 'index-img'>
+       <%= image_tag request.avatar, style: 'width: 70px; height: 60px; display: block'%>
+       </div>
+      <% end %>
+      </td>
+      <td><button class='sho-btn'><%= link_to 'Show', request %></button></td>
+        <td><button class='dest-btn'><%= link_to 'Destroy', request, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+
+
+
+<br>
+<div class='form_elem'>
+<button class='btn-align'><%= link_to 'HomePage', root_path %></button>
+<button class='btn-align'><%= link_to 'WelcomePage', edit_customer_registration_path %></button>
+<button class='btn-align'><%= link_to 'Make Your New Request', new_request_path %></button>
+<button class='btn-align'><%= link_to 'Comments DashBoard', comments_path %></button>
+</div>
+
+<!--
+<p>
+<td><%= link_to 'Edit', edit_request_path(request) %></td>
+<td><%= request.body %></td>
+<th>Body</th>
+</p>
+-->
+
+</div>
+ <% end %>
+
+
+
+
+
+

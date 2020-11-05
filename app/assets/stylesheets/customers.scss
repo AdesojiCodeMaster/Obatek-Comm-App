@@ -1,0 +1,279 @@
+// Place all the styles related to the Customers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+#body {
+  background-color: #800080;
+}
+
+.container {
+  background-color: #800080;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin-bottom: 15px;
+  width: 1000px;
+}
+
+.time {
+  align-items: center;
+  background-color: #12f0a6;
+  display: flex;
+  flex-direction: column;
+  width: 1284px;
+}
+
+.inner-cont2 {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
+  row-gap: 20px;
+  column-gap: 10px;
+  width: 470px;
+  height: 410px;
+  margin: 20px 0 0 100px;
+}
+
+.inner-cont1 {
+  width: 470px;
+  margin: 40px 10px 0 20px;
+}
+
+.para_word {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  text-align: center;
+}
+
+.para {
+  width: 100px;
+  height: 100px;
+}
+
+.para-oba {
+  width: 200px;
+  height: 200px;
+}
+
+h1 {
+  color: #00f;
+  font-size: 30px;
+}
+
+.reg {
+  border-radius: 20px;
+  height: 60px;
+  margin-bottom: 15px;
+  width: 200px;
+}
+
+a.reg1 {
+  color: #639;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.intro {
+  background-color: #f0ffff;
+  color: blue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.cus_index {
+  align-items: center;
+  background-color: #f0ffff;
+  display: flex;
+  flex-direction: column;
+  width: 1284px;
+}
+
+.count {
+  font-size: 40px;
+  color: #1818f5;
+}
+
+.reg-center {
+  align-items: center;
+  background-color: #f5dfb6;
+  display: flex;
+  flex-direction: column;
+}
+
+.wide {
+  border-radius: 10px;
+  font-size: 20px;
+  height: 30px;
+  width: 465px;
+  margin-top: 5px;
+}
+
+.fclass {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sub {
+  background-color: green;
+  border-radius: 8px;
+  color: #ecec1b;
+  font-size: 15px;
+  height: 40px;
+  margin-bottom: 20px;
+  width: 136px;
+}
+
+.show-p {
+  background-color: aliceblue;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.log-roll {
+  margin: 40px 20px 20px 20px;
+}
+
+.btn-navi {
+  font-size: 18px;
+  font-weight: 500;
+  height: 36px;
+  width: 250px;
+  margin: 20px 0 10px 0;
+}
+
+.profile {
+  margin-bottom: 10px;
+}
+
+.signup {
+  background-color: #f0ffff;
+}
+
+.wrapper {
+  background-color: #800080;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sho-cen {
+  margin-left: 30px;
+}
+
+.tab-div {
+  margin-left: 100px;
+}
+
+label {
+  font-size: 22px;
+}
+
+.tek-sp {
+  background: #ffe4c4;
+  color: #8a2be2;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.cus-name {
+  color: #00f;
+}
+
+.span_num {
+  font-size: 2.5rem;
+  width: 510px;
+  margin-left: 0;
+  padding-left: 0;
+  border: 1px solid #f31212;
+  background-color: #ffebcd;
+  margin-bottom: 10px;
+}
+
+.span-time {
+  background-color: #ffe4c4;
+  color: #f00;
+  font-size: 1rem;
+  margin: 10px 0 10px 0;
+  padding: 3px;
+  width: 350px;
+}
+
+.reg2 {
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+@media only screen and (max-width: 760px) {
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+
+  tr { border: 1px solid #ccc; }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td::before {
+    /* Now like a table header */
+    position: absolute;
+
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  .table-form {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .idx-row {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    margin: 10px 0 10px 0;
+  }
+
+  .q-row {
+    height: 55px;
+  }
+
+  .tab-div2 {
+    display: none;
+  }
+
+  .head-ad {
+    font-size: 1.5rem;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 761px) {
+  .tab-div {
+    display: none;
+  }
+}

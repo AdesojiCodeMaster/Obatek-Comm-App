@@ -1,0 +1,61 @@
+<% if current_customer %>
+<div class = 'reg-cen' >
+
+<p id="notice"><%= notice %></p>
+
+<h1 class='das-b'>Obatek Telecom Show DashBoard For Individual Request. </h1>
+
+<div>
+<label for="request_customer_id" class='show-dash'><strong>Request Topic</strong></label>
+  <input class="wide" type="text" value='<%= @request.title %>'>
+</div>
+
+<div>
+<label for="request_customer_id" class='show-dash'><strong>Request Body</strong></label>
+<article class="req-msg"><%= @request.body %> </article>
+</div>
+
+<div class='field-hide'>
+  <label for="request_customer_id" class='show-dash'><strong>Customer_id</strong></label>
+  <input class="wide" type="text" value='<%= @request.customer_id %>'>
+</div>
+  
+<% if @request.avatar.attached? %>
+<%= image_tag @request.avatar, style: 'width: 50px; height: 60px; display: block'%>
+<% end %>
+
+<button class='btn-nav2' ><%= link_to 'Navigate To Requests Summary', requests_path %></button>
+<!--
+<p>
+<%= link_to 'Edit', edit_request_path(@request) %> |
+</p>
+<div class = 'reg-cen' >
+<p id="notice"><%= notice %></p>
+
+<div>
+<label for="request_customer_id"><strong>Request Topic</strong></label>
+  <input class="wide" type="text" value='<%= @request.title %>'>
+</div>
+
+<div>
+<label for="request_customer_id"><strong>Request Body</strong></label>
+<article class="req-msg"><%= @request.body %> </article>
+</div>
+
+<div>
+  <label for="request_customer_id"><strong>Customer_id</strong></label>
+  <input class="wide" type="text" value='<%= @request.customer_id %>'>
+</div>
+  
+<% if @request.avatar.attached? %>
+<%= image_tag @request.avatar, style: 'width: 50px; height: 60px; display: block'%>
+<% end %>
+<button class='btn-nav2' ><%= link_to 'Navigate To Requests Summary', requests_path %></button>
+<!--
+<p>
+<%= link_to 'Edit', edit_request_path(@request) %> |
+</p>
+-->
+</div>
+<% end %>
+

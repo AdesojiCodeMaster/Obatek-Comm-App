@@ -1,0 +1,33 @@
+<%= form_with(model: request, local: true) do |form| %>
+  <% if request.errors.any? %>
+    <div id="error_explanation" >
+      <h2><%= pluralize(request.errors.count, "error") %> prohibited this request from being saved:</h2>
+
+      <ul>
+        <% request.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+  <label for="request_title" class='request_body'>Request Topic</label>
+  <input class="wide" type="text" name="request[title]" id="request_title">
+  </div>
+
+  <div class="field">
+  <label for="request_body" class='request_body'>Request Body</label>
+  <textarea class="req-msg" name="request[body]" id="request_body"></textarea>
+  </div>
+
+  <div class="field-hide">
+  <label for="request_customer_id" class='request_body'>Customer_Id [As You Have It In WelcomePage]</label>
+  <%= form.text_field :customer_id, class:'wide', value: current_customer.id %>
+  </div>
+  <label for="customer_Profile Photo" class='profile'>Profile photo</label>
+  <%= form.file_field :avatar%>
+  <div class="actions">
+    <%= form.submit:class => 'sub1' %>
+  </div>
+<% end %>

@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+<div  class='reg-cen'>
+<h1 class='oba-comm-das'> Obatek Telecom Customer Comments/Complains DashBoard </h1>
+
+<% @comments.each do |comment| %>
+  <%= form_with(model: comment, local: true) do |form| %>
+  <div class="field">
+    <%= form.label :Customer_comment,  class:'request_body1' %>
+    <textarea id="message" name="message" cols="26" rows="4"><%= comment.body %></textarea>
+  </div>
+
+ <div class='comm-spec'>
+  <div class="field-hide">
+  <%= form.label :Customer_Id, class:'request_body'%>
+  <%= form.text_field :customer_id, class:'text-input' %>
+  </div>
+  
+  <div class="field-hide">
+    <%= form.label :request_Id, class:'request_body'%>
+    <%= form.text_field :request_id, class:'text-input' %>
+  </div>
+
+  </div>
+  
+   <div class='cus_index_cont'>
+    <button class='comm-idx-btn1'><%= link_to 'Show', comment %></button>
+    <button class='comm-idx-btn3'><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+  </div>
+<% end %>
+<% end %>
+<div class='navig'>
+<button ><%= link_to 'Home', root_path %></button>
+<button ><%= link_to 'Req Summary', requests_path %></button>
+<button ><%= link_to 'New Comment ', new_comment_path %></button>
+</div>
+</div>

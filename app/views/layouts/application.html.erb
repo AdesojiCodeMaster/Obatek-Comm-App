@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ObatekCommApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
+
+    
+  <body id= 'body'>
+ 
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner mt-1 mb-1">
+    <div class="carousel-item active">
+    <%= image_tag 'Airtel-Airtime.jpg', class: 'carol' %>
+    </div>
+    <div class="carousel-item">
+    <%= image_tag 'glo1.jpg', class: 'carol' %>
+    </div>
+    <div class="carousel-item">
+    <%= image_tag 'mtn1.jpg', class: 'carol' %>
+    </div>
+    <div class="carousel-item">
+    <%= image_tag '9mobile1.jpg', class: 'carol' %>
+    </div>
+    <div class="carousel-item">
+    <%= image_tag 'smile.gif', class: 'carol' %>
+    </div>
+    <div class="carousel-item">
+    <%= image_tag 'GOtv.png', class: 'carol' %>
+    </div>
+    <div class="carousel-item">
+    <%= image_tag 'Startimes-Subscription.jpg', class: 'carol' %>
+    </div>
+    <div class="carousel-item">
+    <%= image_tag 'dstv.jpg', class: 'carol' %>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span  aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+ <%= yield %>
+    <% if current_customer %>  
+      <button class='front-log'><%= link_to " Logout", destroy_customer_session_path, :method => :delete, class: "destroy_member_session" %></button>
+    <%else%>
+      <button class='front-log' ><%= link_to "Sign up", new_customer_registration_path,  class: "new__customer_registration" %></buttton>
+      <button class='front-log'><%= link_to "Login", new_customer_session_path,  class: "new_customer_session" %></button>
+  <% end %>  
+  </body>
+</html>

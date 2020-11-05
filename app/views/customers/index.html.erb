@@ -1,0 +1,66 @@
+<div class= 'cus_index'>
+<p id="notice"><%= notice %></p>
+<h1>Obatek Telecom Customer Care Center.</h1>
+<div class='oba-logo'> <%= image_tag 'obatek-logo.jpeg', class: 'para-oba' %></div>
+<div class='cus_index'>
+<p class='intro'>
+ Come and explore Obatek Telecom Customer Experience Center.
+ </p>
+ </div>
+</div>
+
+<div class='wrapper'>
+<div class="container">
+
+<div class="inner-cont1">
+    <span class= 'para_word'>
+    <b>Obatek Telecom Company</b> is a Nigeria best option whenever you think of easy and instant 
+    online mobile recharge. Our system gives you the flexibility to recharge your 
+    mobile phone number anytime and from anywhere - be it from home, office, 
+    restaurant or holiday and all you need is internet access. We do not charge you 
+    over any online mobile recharges done and you can save your time, effort and money.
+    <br>
+    <br>
+    Also Bill Payments such as DSTv, GOTv, Startimes subscription, and Electricity payments
+     can be done effortlessly. Sign up and enjoy great online bill payment services through 
+     vtudata.com. We have a robust and secured Online Payment gateway that accepts Master card, 
+     Verve, Visa Card, etc.
+    </span>
+    </div>  
+
+<div class="inner-cont2">
+<%= image_tag 'mtn1.jpg', class: 'para' %>
+<%= image_tag 'glo1.jpg', class: 'para' %>
+<%= image_tag 'Airtel-Airtime.jpg', class: 'para' %>
+<%= image_tag '9mobile1.jpg', class: 'para' %>
+<%= image_tag 'smile.gif', class: 'para' %>
+<%= image_tag 'GOtv.png', class: 'para' %>
+<%= image_tag 'Startimes-Subscription.jpg', class: 'para' %>
+<%= image_tag 'dstv.jpg', class: 'para' %>
+<%= image_tag 'ikeja electricity.png', class: 'para' %>
+<%= image_tag 'ibedc.png', class: 'para' %>
+<%= image_tag 'waec.png', class: 'para' %>
+<%= image_tag 'spectranet.png', class: 'para' %>
+</div>
+</div>
+</div>
+<div class='time'>
+<p class='intro'>
+Kindly click the appropriate button below to <strong>register or login</strong> 
+and enjoy our amazing customer services.
+ </p>
+ <div class='reg-click'>
+<button>
+<%= link_to 'Sign_Up',  new_customer_registration_path %>
+</button>
+<button><%= link_to 'Log_In',  new_customer_session_path %></button>
+</div>
+<%if current_customer %>
+<button class='reg2'><%= link_to 'Click Here To Move To Welcome Page', edit_customer_registration_path %></button>
+<%end%>
+<span class='span-time'>Date & Time [UTC]: <%= Time.now %></span>
+<span class='span_num'> Total Customers on board: <strong class='count'> <%= @customers.count%> </strong> </span> 
+</div>
+
+
+

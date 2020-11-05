@@ -1,0 +1,29 @@
+
+<div  class='reg-cen'>
+<p id="notice"><%= notice %></p>
+<h1 class='oba-comm-das'> Show Individual Customer Comment/Complain Summary</h1>
+<p class='comm-sh-pa'>
+  <strong>Comment/Complain Body</strong>
+  <br>
+  <br>
+  <label class='show-panel'><%= @comment.body %></label>
+</p>
+<div class = 'field-hide'>
+<div class='comm-spec'>
+<p class='comm-sh-pa'>
+  <strong>Customer:</strong>
+  <%= @comment.customer_id %>
+</p>
+
+<p class='comm-sh-pa'>
+  <strong>Request:</strong>
+  <%= @comment.request_id %>
+</p>
+</div>
+</div>
+<div class='form_elem'>
+<button class='btn-align'><%= link_to 'HomePage', root_path %></button>
+<button class='btn-align'><%= link_to 'To Comment DashBoard', comments_path %></button>
+</div>
+</div>
+

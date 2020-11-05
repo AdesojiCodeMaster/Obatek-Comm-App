@@ -21,9 +21,9 @@
   <textarea class="req-msg" name="request[body]" id="request_body"></textarea>
   </div>
 
-  <div class="field">
+  <div class="field-hide">
   <label for="request_customer_id" class='request_body'>Customer_Id [As You Have It In WelcomePage]</label>
-  <input class="wide" type="text" name="request[customer_id]" id="request_customer_id">
+  <%= form.text_field :customer_id, class:'wide', value: current_customer.id %>
   </div>
   <label for="customer_Profile Photo" class='profile'>Profile photo</label>
   <%= form.file_field :avatar%>

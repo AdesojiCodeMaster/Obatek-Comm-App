@@ -11,9 +11,8 @@
       <thead>
       <tr class='idx-row'>
         <th class='q-row'>Request Title</th>
-        <th class='q-row'>Customer_id</th>
+        <th class='q-row'>Customer Name</th>
         <th class='q-row'>Customer_Pix</th>
-        <th class='q-row'>Request_id</th>
         <th class='q-row'> <div class='sho-cen'>Show</div></th>
         <th class='q-row'> <div class='sho-cen'>Destroy</div></th>
       </tr>
@@ -22,7 +21,7 @@
     <tbody>
       <tr class='idx-row' >
         <td class='q-row'><%= request.title %></td>
-        <td class='q-row'><button class='id-btn'><%= request.customer_id %></button></td>
+       <td class='q-row'><button class='id-btn'><%= Customer.find(request.customer_id).customer_name %></button></td>
         <td class='q-row'>
       
         <% if request.avatar.attached? %>
@@ -31,8 +30,7 @@
        </div>
       <% end %>
       </td>
-      <td class='q-row'><button class='sho-btn'><%= request.id %></button> </td>
-        <td class='q-row'><button class='sho-btn'><%= link_to 'Show', request %></button></td>
+       <td class='q-row'><button class='sho-btn'><%= link_to 'Show', request %></button></td>
         <td class='q-row'><button class='dest-btn'><%= link_to 'Destroy', request, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
  <% end %>
@@ -46,9 +44,8 @@
   <thead>
     <tr>
       <th>Request Title</th>
-      <th>Customer_id</th>
+      <th>Customer Name</th>
       <th>Customer_Pix</th>
-      <th>Request_id</th>
       <th> <div class='sho-cen'>Show</div></th>
       <th> <div class='sho-cen'>Destroy</div></th>
     </tr>
@@ -58,7 +55,7 @@
     <% @requests.each do |request| %>
       <tr>
         <td><%= request.title %></td>
-        <td><button class='id-btn'><%= request.customer_id %></button></td>
+        <td><button class='id-btn'><%= Customer.find(request.customer_id).customer_name  %></button></td>
         <td>
       
         <% if request.avatar.attached? %>
@@ -67,8 +64,7 @@
        </div>
       <% end %>
       </td>
-      <td><button class='sho-btn'><%= request.id %></button> </td>
-        <td><button class='sho-btn'><%= link_to 'Show', request %></button></td>
+      <td><button class='sho-btn'><%= link_to 'Show', request %></button></td>
         <td><button class='dest-btn'><%= link_to 'Destroy', request, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
@@ -78,7 +74,7 @@
 
 
 
-<p class='comm-not'> Please, use both <strong>Customer_id</strong> and <strong>Request_id</strong> to send your comments/complains to us!</p> 
+
 <br>
 <div class='form_elem'>
 <button class='btn-align'><%= link_to 'HomePage', root_path %></button>

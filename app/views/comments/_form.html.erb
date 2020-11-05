@@ -16,14 +16,14 @@
     <textarea name="comment[body]" id="comment_body" cols="30" rows="4"></textarea>
   </div>
 <div class='comm-spec'>
-  <div class="field">
+  <div class="field-hide">
     <%= form.label :customer_Id,  class:'request_body'%>
     <%= form.text_field :customer_id, class:'text-input', value: current_customer.id %>
   </div>
 
-  <div class="field">
+  <div class="field-hide">
     <%= form.label :request_Id,  class:'request_body' %>
-    <%= form.text_field :request_id, class:'text-input', placeholder:'Enter request_id' %>
+    <%= form.text_field :request_id, class:'text-input', value: current_customer.request_ids %>
   </div>
 </div>
   <div class="actions">

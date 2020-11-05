@@ -47,7 +47,7 @@ th {
 }
 
 .id-btn {
-  margin: 15px 0 0 35px;
+  margin: 15px 0 0 5px;
 }
 
 .reg-cen {
@@ -123,4 +123,8 @@ th {
 .field {
   display: flex;
   flex-direction: column;
+}
+
+.field-hide {
+  display: none;
 }
